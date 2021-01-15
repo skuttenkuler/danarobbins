@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Gigs(models.Model):
+class Gig(models.Model):
     venue = models.CharField(max_length=50, default='')
     time = models.DateTimeField(auto_now=False, auto_now_add=False, default='')
     artist_name = models.CharField(max_length=50, default='')
