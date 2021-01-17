@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Gigs
+from .models import Gig
 
-class GigsSerializer(serializers.ModelSerializer):
+class GigSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Gigs
+        model = Gig
         fields = ('id', 'venue', 'time', 'artist_name','ticket_link')
